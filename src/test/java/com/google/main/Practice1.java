@@ -33,14 +33,14 @@ public class Practice1
 	{
 		System.out.println("before method");
 	}
-	@Test(retryAnalyzer = RetryFailed.class)
+	@Test
 	public void  abc()
 	{
 		System.out.println("abc");
 		
 		System.out.println(10/0);
 	}
-	@Test(retryAnalyzer = RetryFailed.class)
+	@Test
 	public void xyz()
 	{
 		System.out.println("xyz test");

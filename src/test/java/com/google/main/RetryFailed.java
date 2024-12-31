@@ -8,11 +8,10 @@ public class RetryFailed implements IRetryAnalyzer
 
 	int retrycount=0;
 	
-	int  retrymaxcount=3;
+	int retrymaxcount=3;
 	
-	public boolean retry(ITestResult result) 
+	public boolean retry(ITestResult result)
 	{
-		
 		if(retrycount<retrymaxcount)
 		{
 			retrycount++;
@@ -22,7 +21,8 @@ public class RetryFailed implements IRetryAnalyzer
 		
 		return false;
 	}
-	}
+
+}
 	
 
 	

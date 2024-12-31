@@ -3,35 +3,36 @@ package com.google.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import com.google.utils.BaseClass;
 
-public class LoginPage extends BaseClass
+public class SigninPage extends BaseClass
 {
 
-	public LoginPage()
+	public SigninPage()
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//input[@name='username']")
+	@FindBy(xpath="(//button[@data-testid='Button_signin'])[6]")
+	
+	WebElement signin;
+	
+	@FindBy(xpath="//input[@id='signInName']")
 	
 	WebElement username;
 	
-	@FindBy(xpath="//input[@name='password']")
+	@FindBy(xpath="//input[@id='password']")
 	
 	WebElement password;
 	
-	@FindBy(xpath="//button[text()=' Login ']")
+	@FindBy(xpath="//button[@id='next']")
 	
 	WebElement login;
-	
-	@FindBy(xpath="//p[text()='Forgot your password? ']")
-	
-	WebElement forgotpassword;
 
-	@FindBy(xpath="//h6[text()='Dashboard']")
-	
-	WebElement DashBoard;
+	public WebElement getSignin() {
+		return signin;
+	}
 
 	public WebElement getUsername() {
 		return username;
@@ -44,16 +45,6 @@ public class LoginPage extends BaseClass
 	public WebElement getLogin() {
 		return login;
 	}
-
-	public WebElement getForgotpassword() {
-		return forgotpassword;
-	}
-
-	public WebElement getDashBoard() {
-		return DashBoard;
-	}
-	
-	
 	
 	
 }

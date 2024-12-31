@@ -7,7 +7,7 @@ import org.testng.IAnnotationTransformer;
 import org.testng.IRetryAnalyzer;
 import org.testng.annotations.ITestAnnotation;
 
-public class RerunAllFailed implements IAnnotationTransformer
+public class RerunAllFailed 
 {
 
 	 public void transform(

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.google.main.Practice">
+      <class name="com.google.main.LinkAirProgram">
         <methods>
-          <include name="sample2"/>
-          <include name="sample5"/>
-          <include name="sample3"/>
-          <include name="sample"/>
-          <include name="sample4"/>
+          <include name="clo"/>
+          <include name="Valid"/>
+          <include name="Test"/>
+          <include name="Browser"/>
+          <include name="url"/>
         </methods>
-      </class> <!-- com.google.main.Practice -->
+      </class> <!-- com.google.main.LinkAirProgram -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
